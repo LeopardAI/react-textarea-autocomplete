@@ -1,6 +1,6 @@
 {
   "name": "@webscopeio/react-textarea-autocomplete",
-  "version": "4.9.2",
+  "version": "5.0.0",
   "description": "Offers autocomplete over textarea in style of GitHub.",
   "repository": {
     "type": "git",
@@ -65,9 +65,9 @@
     "jest": "24.8.0",
     "lint-staged": "8.1.0",
     "prettier": "1.15.3",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-test-renderer": "18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-test-renderer": "^18.2.0",
     "regenerator-runtime": "^0.13.1",
     "rollup": "0.67.4",
     "rollup-plugin-babel": "4.1.0",
@@ -83,8 +83,8 @@
   },
   "peerDependencies": {
     "prop-types": "^15.0.0",
-    "react": "^16.0.0 || ^17 || ^18",
-    "react-dom": "^16.0.0 || ^17 || ^18"
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
     "custom-event": "^1.0.1",

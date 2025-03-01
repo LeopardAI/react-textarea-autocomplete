@@ -2,7 +2,9 @@
 /* eslint react/no-multi-comp: 0 */
 
 import React from "react";
-import ReactDOM from "react-dom";
+import * as ReactDOM from "react-dom";
+// Support for React 18 createPortal
+import { createPortal } from "react-dom";
 import PropTypes from "prop-types";
 import getCaretCoordinates from "textarea-caret";
 import CustomEvent from "custom-event";
@@ -208,7 +210,7 @@ class Autocomplete extends React.Component<AutocompleteProps> {
     );
 
     return renderToBody && body !== null
-      ? ReactDOM.createPortal(autocompleteContainer, body)
+      ? createPortal(autocompleteContainer, body)
       : autocompleteContainer;
   }
 }

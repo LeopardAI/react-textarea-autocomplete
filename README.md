@@ -41,9 +41,15 @@ npm install --save @webscopeio/react-textarea-autocomplete
 
 > This package also depends on `react` and `react-dom`. Please make sure you have those installed as well.
 
-## React 18 Migration Guide
+## React 18 Support
 
-Version 4.9.2+ supports React 18. If you're upgrading to React 18 in your application, here are a few things to consider:
+Version 5.0.0 is fully optimized for React 18. This version includes the following improvements:
+
+- Full compatibility with React 18's concurrent rendering features
+- Optimized ReactDOM import structure
+- Modern createPortal implementation
+- Updated peer dependencies to support React 16.8+, 17, and 18
+- Fixed test setup for React 18 compatibility
 
 ### React 18 Root API
 
@@ -63,7 +69,7 @@ root.render(<App />);
 
 ### Concurrent Rendering
 
-React 18 introduces concurrent rendering features. If you experience any issues with component updates or rendering, please [file an issue](https://github.com/webscopeio/react-textarea-autocomplete/issues).
+React 18 introduces concurrent rendering features, which this package now fully supports. If you experience any issues with component updates or rendering, please [file an issue](https://github.com/webscopeio/react-textarea-autocomplete/issues).
 
 ### Strict Mode
 
@@ -76,14 +82,9 @@ This package now supports React Testing Library (RTL) for testing. The legacy En
 If you're running tests for this package:
 
 ```bash
-# Run React Testing Library tests (compatible with React 18)
-yarn test:rtl
-
-# Legacy Enzyme tests (may not work correctly with React 18)
+# Run tests (compatible with React 18)
 yarn test
 ```
-
-If you're extending or forking this package, we recommend using React Testing Library for new tests.
 
 ## Props
 
