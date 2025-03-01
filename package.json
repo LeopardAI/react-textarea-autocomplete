@@ -47,6 +47,9 @@
     "@babel/runtime": "7.2.0",
     "@jukben/emoji-search": "1.1.7",
     "@jukben/eslint-config": "0.0.6",
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/react": "^14.1.2",
+    "@testing-library/user-event": "^14.5.1",
     "all-contributors-cli": "^6.16.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "23.6.0",
@@ -54,9 +57,6 @@
     "babel-preset-react-app": "6.1.0",
     "css-loader": "2.0.1",
     "cypress": "3.1.5",
-    "enzyme": "^3.7.0",
-    "enzyme-adapter-react-16": "^1.6.0",
-    "enzyme-to-json": "^3.3.4",
     "eslint": "5.4.0",
     "eslint-plugin-prettier": "^2.5.0",
     "flow-bin": "^0.60.1",
@@ -65,9 +65,9 @@
     "jest": "24.8.0",
     "lint-staged": "8.1.0",
     "prettier": "1.15.3",
-    "react": "16.6.0",
-    "react-dom": "16.6.0",
-    "react-test-renderer": "16.6.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-test-renderer": "18.2.0",
     "regenerator-runtime": "^0.13.1",
     "rollup": "0.67.4",
     "rollup-plugin-babel": "4.1.0",
@@ -101,15 +101,13 @@
     ]
   },
   "jest": {
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ],
-    "setupFiles": [
+    "setupFilesAfterEnv": [
       "<rootDir>/setupJest.js"
     ],
     "moduleNameMapper": {
       "\\.(css|scss)$": "<rootDir>/__mocks__/styleMock.js"
-    }
+    },
+    "testEnvironment": "jsdom"
   },
   "babel": {
     "presets": [
