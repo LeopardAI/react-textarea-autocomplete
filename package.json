@@ -31,7 +31,7 @@
     "dev": "yarn run example --open",
     "example": "NODE_OPTIONS=--openssl-legacy-provider webpack-dev-server --config webpack.dev.config.js",
     "example:build": "NODE_OPTIONS=--openssl-legacy-provider webpack --config webpack.prod.config.js",
-    "prepublish": "yarn run build",
+    "prepare": "yarn run build",
     "lint": "eslint --ext=js --ext=jsx ./src",
     "lint:fix": "yarn run lint -- --fix",
     "test": "jest",
