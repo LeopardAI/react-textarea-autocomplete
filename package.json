@@ -44,7 +44,6 @@
   "devDependencies": {
     "@babel/core": "7.2.2",
     "@babel/polyfill": "7.0.0",
-    "@babel/runtime": "7.2.0",
     "@jukben/emoji-search": "1.1.7",
     "@jukben/eslint-config": "0.0.6",
     "@testing-library/jest-dom": "^6.1.5",
@@ -88,7 +87,8 @@
   },
   "dependencies": {
     "custom-event": "^1.0.1",
-    "textarea-caret": "3.0.2"
+    "textarea-caret": "3.0.2",
+    "@babel/runtime": "7.2.0"
   },
   "husky": {
     "pre-commit": "lint-staged"
